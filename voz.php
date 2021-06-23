@@ -31,7 +31,7 @@ require ('config/conection.php');
     
     <div class="tex-center d-flex justify-content-around">
         <h2>Productos disponibles</h2>
-        <button type="button" class="btn btn-dark m-2 fs-3"><a href="../voz.php" class="badge badge-dark">Buscar con voz</a></button>
+        <button type="button" class="btn btn-dark m-2 fs-3"><a href="voz.php" class="badge badge-dark">Buscar con voz</a></button>
     </div>
 
     <div class="d-flex justify-content-center flex-column mt-4">
