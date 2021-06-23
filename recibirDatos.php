@@ -31,10 +31,26 @@ function validarUsuario(){
         }
 }
 
+function consultarProducto(){
+    include('config/conection.php');
+
+    $producto = $_POST['producto'];
+
+    $query = "SELECT * FROM productos WHERE Producto = '$producto'";
+    $result = mysqli_query($conn,$query);
+    while($row=mysqli_fetch_all($result)){
+        echo json_encode($row);
+     }
+
+}
+
 if(isset($_POST['usuario']) && !empty($_POST['usuario']) && isset($_POST['password']) && !empty($_POST['password'])){
     validarUsuario();
 }
 
+if(isset($_POST['producto'])){
+    consultarProducto();
+}
 
 
 ?>
