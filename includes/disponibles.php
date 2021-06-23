@@ -6,8 +6,6 @@ require ('../config/conection.php');
         header("Location:../index.php");
         
     }else{
-   
-
 
 ?>
 
@@ -31,8 +29,11 @@ require ('../config/conection.php');
     <button type="button" class="btn btn-dark m-2"><a href="../inventario.php" class="badge badge-dark">Regresar</a></button>
     <div class="container-fluid mt-5 w-75">
     
+    <div class="tex-center d-flex justify-content-around">
+        <h2>Productos disponibles</h2>
+        <button type="button" class="btn btn-dark m-2 fs-3"><a href="../voz.php" class="badge badge-dark">Buscar con voz</a></button>
+    </div>
 
-<h2>Productos disponibles</h2>
         <table class="table table-striped table-hover">
              <thead>
                 <tr>

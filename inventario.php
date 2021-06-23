@@ -18,26 +18,26 @@ require_once ('includes/head.php');
               <ul class="navbar-nav mx-auto">
                   <li class="nav-item px-5">
                     <a class="nav-link active text-center text-light h5" aria-current="page" href="home.php">
-                    <img src="Imagenes/inicio1.ico"> Home </a>
+                    <img src="imagenes/inicio1.ico"> Home </a>
                   </li>
 
                     <br>
 
                   <li class="nav-item px-5">
                     <a class="nav-link active text-center text-light h5" aria-current="page" href="#">
-                      <img src="Imagenes/shop.ico"> Ventas</a>
+                      <img src="imagenes/shop.ico"> Ventas</a>
                   </li>
                     
                     <br>
 
                   <li class="nav-item px-5">
                         <a class="nav-link active text-center text-light h5" href="includes/usuarios.php">
-                          <img src="Imagenes/inventario1.ico"> Control de Usuarios</a>
+                          <img src="imagenes/inventario1.ico"> Control de Usuarios</a>
                   </li>
 
                   <li class="nav-item px-5">
                       <a class="nav-link active text-center text-light h5" href="#">
-                        <img src="Imagenes/ingresos.ico"> Ingresos</a>
+                        <img src="imagenes/ingresos.ico"> Ingresos</a>
                   </li>
               </ul>
             </div>
