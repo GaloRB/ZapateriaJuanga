@@ -30,8 +30,8 @@ require ('config/conection.php');
     <div class="container-fluid mt-5 w-75">
     
     <div class="tex-center d-flex justify-content-around">
-        <h2>Productos disponibles</h2>
-        <button type="button" class="btn btn-dark m-2 fs-3"><a href="voz.php" class="badge badge-dark">Buscar con voz</a></button>
+        <h2>Proveedor</h2>
+        <button type="button" class="btn btn-dark m-2 fs-3"><a href="vozProveedor.php" class="badge badge-dark">Buscar con voz</a></button>
     </div>
 
     <div class="d-flex justify-content-center flex-column mt-4">
@@ -52,7 +52,7 @@ require ('config/conection.php');
          
          <script src="js/bootstrap.bundle.js"></script>
          <script src="js/leer.js"></script>
-         <script src="js/grabar.js"></script>
+         <script src="js/grabarProveedor.js"></script>
          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>

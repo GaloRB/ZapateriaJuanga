@@ -1,6 +1,6 @@
 <?php
 require ('../config/conection.php');
-
+$proveedor = $_GET['proveedor'];
     session_start();
     if(!isset($_SESSION["autenticado"])){
         header("Location:../index.php");
@@ -46,7 +46,7 @@ require ('../config/conection.php');
             <tbody>
                             
              <?php
-               $sql="SELECT * from proveedor";
+               $sql="SELECT * from proveedor WHERE Nombre = '$proveedor'";
                $result=mysqli_query($conn,$sql);  
                 while($row=mysqli_fetch_array($result)){
                                     
