@@ -32,23 +32,21 @@ const leerTextoCondicionado = (mensaje) => {
                 .then((Response) => {
                     console.log(Response);
                     console.log(Response[0][2])
-                    let z = Response[0][2];
-                    /*  if (data === 1) {
-                         console.log(data);
-                         location.href = 'home.php';
-                     } else if (data === 2) {
-                         location.href = 'inventarioUsuario.php';
-                         console.log(data);
-                     } else {
-                         setTimeout(() => {
-                             respuestaForm.classList.remove('invisible');
-                             console.log(data);
-                             alertaForm.textContent = 'Datos Incorrectos';
-                             setTimeout(() => {
-                                 respuestaForm.classList.add('invisible');
-                             }, 2000);
-                         }, 100);
-                     } */
+                    if (Response) {
+                        location.href = 'includes/disponiblesVoz.php?product=Zapato';
+                    } else if (data === 2) {
+                        location.href = 'inventarioUsuario.php';
+                        console.log(data);
+                    } else {
+                        setTimeout(() => {
+                            respuestaForm.classList.remove('invisible');
+                            console.log(data);
+                            alertaForm.textContent = 'Datos Incorrectos';
+                            setTimeout(() => {
+                                respuestaForm.classList.add('invisible');
+                            }, 2000);
+                        }, 100);
+                    }
                 });
             voz.text = 'En un momento te muestro los disponible'
         } else {
